@@ -31,6 +31,11 @@ function MyApp({ Component, pageProps }) {
 			src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
 		/>
 		<Script
+			async
+			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593915309329672"
+			crossOrigin="anonymous"
+		/>
+		<Script
 			id="gtag-init"
 			strategy="afterInteractive"
 			dangerouslySetInnerHTML={{
