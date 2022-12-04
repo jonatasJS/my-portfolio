@@ -26,6 +26,10 @@ const Navigation = () => {
 		let headroom = new Headroom(document.getElementById("navbar-main"));
 		// initialise
 		headroom.init();
+
+		window.addEventListener('scroll', (e) => {
+			console.log(e)
+		})
 	});
 
 	return (
@@ -35,6 +39,10 @@ const Navigation = () => {
 					className="navbar-main navbar-transparent navbar-light headroom"
 					expand="lg"
 					id="navbar-main"
+					style={{
+						backdropFilter: "blur(5px)",
+						backgroundColor: "rgba(23, 43, 77, 0.8) !important"
+					}}
 				>
 					<Container
 						style={{
