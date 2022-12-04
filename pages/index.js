@@ -45,8 +45,6 @@ export async function getStaticProps(_) {
     `https://api.github.com/users/${openSource.githubUserName}/repos`
   ).then((res) => res.json());
 
-  console.log(githubReposData);
-
   return {
     props: { githubProfileData, githubReposData },
   };

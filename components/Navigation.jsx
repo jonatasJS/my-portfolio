@@ -36,7 +36,11 @@ const Navigation = () => {
 					expand="lg"
 					id="navbar-main"
 				>
-					<Container>
+					<Container
+						style={{
+							display: 'flex'
+						}}
+					>
 						<NavbarBrand href="/" className="mr-lg-5">
 							<h2 className="text-white" id="nav-title">
 								{greetings.name}
