@@ -30,7 +30,7 @@ const Navigation = () => {
 
 	return (
 		<>
-			<header style={{ position: "fixed", zIndex: 999999 }} className="header-global">
+			<header className="header-global">
 				<Navbar
 					className="navbar-main navbar-transparent navbar-light headroom"
 					expand="lg"
