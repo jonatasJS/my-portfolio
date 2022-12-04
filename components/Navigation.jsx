@@ -18,6 +18,7 @@ import {
 
 const Navigation = () => {
 	const [collapseClasses, setCollapseClasses] = useState("");
+	const [blur, setBlur] = useState(false);
 	const onExiting = () => setCollapseClasses("collapsing-out");
 
 	const onExited = () => setCollapseClasses("");
@@ -28,7 +29,11 @@ const Navigation = () => {
 		headroom.init();
 
 		window.addEventListener('scroll', (e) => {
-			console.log(e)
+			if(window.scrollY <= 100) {
+				setBlur(false);
+			} else {
+				setBlur(true);
+			}
 		})
 	});
 
@@ -40,8 +45,8 @@ const Navigation = () => {
 					expand="lg"
 					id="navbar-main"
 					style={{
-						backdropFilter: "blur(5px)",
-						backgroundColor: "rgba(23, 43, 77, 0.8) !important"
+						backdropFilter: blur ? "blur(5px)" : "none",
+						backgroundColor:  blur ? "rgba(23, 43, 77, 0.5) !important" : ""
 					}}
 				>
 					<Container
