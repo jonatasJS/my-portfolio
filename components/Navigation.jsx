@@ -47,11 +47,11 @@ const Navigation = () => {
 					style={{
 						backgroundColor:  blur ? "rgba(23, 43, 77, 0.5) !important" : "",
 						backdropFilter: blur ? "blur(5px)" : "none",
-						justifyContent: blur ? 'space-between' : '',
 					}}
-				>
+					>
 					<Container
 						style={{
+							justifyContent: 'space-between',
 							display: 'flex !important'
 						}}
 					>
