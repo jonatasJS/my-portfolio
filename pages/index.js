@@ -21,7 +21,6 @@ export default function Home({ githubProfileData, githubReposData }) {
     <div>
       <SEO />
       <Navigation />
-      <Adsense />
       <Greetings />
       <Adsense />
       <Skills />
