@@ -50,6 +50,7 @@ function MyApp({ Component, pageProps }) {
 			}}
 		/>
 		<Component {...pageProps} />
+		<Script src='/serviceWorker.js'></Script>
 	</>;
 }
 
