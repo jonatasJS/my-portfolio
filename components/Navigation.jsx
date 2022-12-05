@@ -54,7 +54,6 @@ const Navigation = () => {
 					expand="lg"
 					id="navbar-main"
 					style={{
-						backgroundColor:  blur ? "rgba(23, 43, 77, 0.7) !important" : "transparent !important",
 						backdropFilter: blur ? "blur(5px)" : "none",
 					}}
 					>
