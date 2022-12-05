@@ -40,18 +40,27 @@ const Navigation = () => {
 	return (
 		<>
 			<header className="header-global">
+				<style
+					dangerouslySetInnerHTML={{
+						__html: `
+							nav#navbar-main {
+								background-color: ${blur ? "rgba(23,43,77,.7) !important" : ""}
+							}
+						`
+					}}
+				></style>
 				<Navbar
 					className="navbar-main navbar-transparent navbar-light headroom"
 					expand="lg"
 					id="navbar-main"
 					style={{
-						backgroundColor:  blur ? "rgba(23, 43, 77, 0.5) !important" : "",
+						backgroundColor:  blur ? "rgba(23, 43, 77, 0.7) !important" : "transparent !important",
 						backdropFilter: blur ? "blur(5px)" : "none",
 					}}
 					>
 					<Container
 						style={{
-							justifyContent: 'space-between',
+							justifyContent: 'space-between !important',
 							display: 'flex !important'
 						}}
 					>
