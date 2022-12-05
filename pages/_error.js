@@ -14,3 +14,10 @@ export default function ErrorPage() {
     </div>
   )
 }
+
+export async function getStaticProps(_) {
+
+  return {
+    props: {}
+  };
+}
