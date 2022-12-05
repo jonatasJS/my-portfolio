@@ -45,13 +45,14 @@ const Navigation = () => {
 					expand="lg"
 					id="navbar-main"
 					style={{
+						backgroundColor:  blur ? "rgba(23, 43, 77, 0.5) !important" : "",
 						backdropFilter: blur ? "blur(5px)" : "none",
-						backgroundColor:  blur ? "rgba(23, 43, 77, 0.5) !important" : ""
+						justifyContent: blur ? 'space-between' : '',
 					}}
 				>
 					<Container
 						style={{
-							display: 'flex'
+							display: 'flex !important'
 						}}
 					>
 						<NavbarBrand href="/" className="mr-lg-5">
