@@ -19,6 +19,19 @@ export default function Document() {
           `,
           }}
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4515639184646084"
+          crossOrigin="anonymous"
+        />
+        <script dangerouslySetInnerHTML={{
+          __html: `
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4515639184646084",
+            enable_page_level_ads: true
+            });
+            `,
+        }} />
       </body>
     </Html>
   )

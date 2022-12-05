@@ -14,18 +14,26 @@ const GithubProfileCard = dynamic(() =>
 import { openSource, showContactUs } from "../portfolio";
 import SEO from "../components/SEO";
 import Contact from "../components/ContactUs.jsx";
+import Adsense from "../components/Adsence";
 
 export default function Home({ githubProfileData, githubReposData }) {
   return (
     <div>
       <SEO />
       <Navigation />
+      <Adsense />
       <Greetings />
+      <Adsense />
       <Skills />
+      <Adsense />
       <Proficiency />
+      <Adsense />
       <Education />
+      <Adsense />
       <Experience />
+      <Adsense />
       <Feedbacks />
+      <Adsense />
       <Projects githubReposData={githubReposData} />
       {showContactUs ? <Contact /> : null}
       <GithubProfileCard prof={githubProfileData} />
