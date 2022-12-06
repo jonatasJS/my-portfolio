@@ -44,7 +44,7 @@ const Navigation = () => {
 					dangerouslySetInnerHTML={{
 						__html: `
 							nav#navbar-main {
-								background-color: ${blur ? "rgba(23,43,77,.7) !important" : ""}
+								background-color: ${blur ? "linear-gradient(35deg,#11cdef,#1171ef)!important !important" : ""}
 							}
 						`
 					}}
