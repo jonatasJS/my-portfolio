@@ -54,5 +54,6 @@ export async function getStaticProps(_) {
 
   return {
     props: { githubProfileData, githubReposData },
+    revalidate: 60 * 60 * 1 // 1 hours
   };
 }
