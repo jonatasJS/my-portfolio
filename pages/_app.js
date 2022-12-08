@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
 		/>
 		<Script
 			async
-			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593915309329672"
+			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4515639184646084"
 			crossOrigin="anonymous"
 		/>
 		<Script

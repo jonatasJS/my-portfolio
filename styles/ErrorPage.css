@@ -14,34 +14,49 @@ html, body {
   height: 100vh;
   color: white;
   animation: colorSlide 15s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
 }
+
 .flexContainer .textCenter {
   text-align: center;
 }
+
 .flexContainer .textCenter h1,
 .flexContainer .textCenter h3 {
   margin: 10px;
   cursor: default;
 }
+
 .flexContainer .textCenter h1 .fade-in,
-.flexContainer .textCenter h3 .fade-in {
+.flexContainer .textCenter h3.fade-in {
   animation: fadeIn 2s ease infinite;
 }
+
 .flexContainer .textCenter h1 {
   font-size: 8em;
   transition: font-size 200ms ease-in-out;
   border-bottom: 1px dashed white;
 }
+
 .flexContainer .textCenter h1 span#digit1 {
   animation-delay: 200ms;
 }
+
 .flexContainer .textCenter h1 span#digit2 {
   animation-delay: 300ms;
 }
+
 .flexContainer .textCenter h1 span#digit3 {
   animation-delay: 400ms;
 }
-.flexContainer .textCenter button {
+
+.flexContainer .textCenter h3.fade-in {
+  animation-delay: 550ms;
+}
+
+.flexContainer .textCenter a {
   border: 1px solid white;
   background: transparent;
   outline: none;
@@ -53,7 +68,8 @@ html, body {
   transition: background-color 200ms ease-in;
   margin: 20px 0;
 }
-.flexContainer .textCenter button:hover {
+
+.flexContainer .textCenter a:hover {
   background-color: white;
   color: #555;
   cursor: pointer;
@@ -63,23 +79,29 @@ html, body {
   0% {
     background-color: #152a68;
   }
+
   25% {
     background-color: royalblue;
   }
+
   50% {
     background-color: seagreen;
   }
+
   75% {
     background-color: tomato;
   }
+
   100% {
     background-color: #152a68;
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
