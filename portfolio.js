@@ -165,3 +165,5 @@ export const seoData = {
 		"Rocket",
 	],
 }
+
+export const namesOfDatas = ["greetings", "openSource", "contact", "socialLinks", "skillsSection", "SkillBars", "educationInfo", "experience", "projects", "feedbacks", "seoData"]

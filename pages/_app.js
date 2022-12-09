@@ -35,6 +35,20 @@ function MyApp({ Component, pageProps }) {
 			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4515639184646084"
 			crossOrigin="anonymous"
 		/>
+		<Script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+		<script
+			dangerouslySetInnerHTML={{
+				__html: `
+					(adsbygoogle = window.adsbygoogle || []).push({
+						google_ad_client: "${gtag.GA_TRACKING_ID}",
+						enable_page_level_ads: true,
+						tag_partner: "site_kit"
+					});
+
+					console.log(adsbygoogle);
+				`
+			}}
+		/>
 		<Script
 			id="gtag-init"
 			strategy="afterInteractive"

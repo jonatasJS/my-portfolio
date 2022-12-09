@@ -66,11 +66,17 @@ const Navigation = () => {
               display: "flex !important",
             }}
           >
-            <NavbarBrand href="/" className="mr-lg-5">
-              <h2 className="text-white" id="nav-title">
+            <Link href="/" className="mr-lg-5">
+              <h2
+                className="text-white"
+                id="nav-title"
+                style={{
+                  cursor: "pointer",
+                }}
+              >
                 {greetings.name}
               </h2>
-            </NavbarBrand>
+            </Link>
             <button
               className="navbar-toggler"
               aria-label="navbar_toggle"
