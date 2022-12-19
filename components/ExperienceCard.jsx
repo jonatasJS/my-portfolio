@@ -34,7 +34,7 @@ const ExperienceCard = ({ data }) => {
 								borderRadius: "50%",
 							}}
 							className="shadow mb-3"
-							alt={data.companylogo}
+							alt={data.company}
 						/>
 						<CardTitle tag="h4" className="mb-2">
 							{data.company}
