@@ -113,7 +113,7 @@ export const experience = [
 		role: "NOC 1",
 		company: "SiM Internet",
 		companylogo: "/img/icons/common/SiM-Internet.png",
-		date: "Set 2021 – ****",
+		date: "Set 2021 – Dez 2022",
 		desc: "Trabalhei com configuração de ONU's, verificação para resolução de problemas com, falta de conexão, lentidão, oscilações, perda de pacote, configuração de ip fixo, abrir portas, etc.",
 	}
 ];
